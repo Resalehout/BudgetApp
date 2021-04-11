@@ -88,6 +88,7 @@ def depositOperation(user):
     print("Operation Successful")
     bankOperations(user)
 
+
 def withdrawalOperation(user):
     cash = int(input("Enter ammount: "))
     if cash >= user[4] or cash == user[4]:
@@ -97,6 +98,7 @@ def withdrawalOperation(user):
         user[4] = user[4] - cash
         print("Take your cash")  
         bankOperations(user)
+
 
 def inquiry(user):
     selectedInquiry = int(input("What would you like to do? (1) Check Balance (2) Complaint: "))
